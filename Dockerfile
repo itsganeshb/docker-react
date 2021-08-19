@@ -9,6 +9,5 @@ RUN npm run build
 
 
 FROM nginx
-
-COPY --from=builder ./build /usr/share/nginx/html
+COPY --from=builder /use/app/frontend/build /usr/share/nginx/html
 
